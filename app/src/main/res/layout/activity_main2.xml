@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Incident:"
+            android:textStyle="bold"
+            android:layout_gravity="left"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:id="@+id/one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:text="one" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Level of Urgency:"
+            android:textStyle="bold"
+            android:layout_gravity="left"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:id="@+id/two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:text="two" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Image (optional):"
+            android:textStyle="bold"
+            android:layout_gravity="left"
+            android:textSize="20dp"/>
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Video (optional):"
+            android:textStyle="bold"
+            android:layout_gravity="left"
+            android:textSize="20dp"/>
+
+        <VideoView
+            android:id="@+id/vid"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current Location:"
+            android:textStyle="bold"
+            android:layout_gravity="left"
+            android:textSize="20dp"/>
+
+        <FrameLayout
+            android:layout_marginTop="30dp"
+            android:id="@+id/fragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- state the incident -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="left"
+        android:text="State the Incident"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+            <AutoCompleteTextView
+                android:id="@+id/auto_complete_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round"
+                android:inputType="text"
+                android:enabled="false"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageButton
+            android:id="@+id/edit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/baseline_edit_24"
+            android:layout_marginLeft="285dp"
+            android:layout_marginTop="40dp" />
+
+        <!--    android:background="@drawable/baseline_edit_24"    -->
+        <!--        android:src="@drawable/baseline_edit_24"-->
+
+    </RelativeLayout>
+
+    <!-- upload media -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="left"
+        android:text="Upload Media"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/uploadMedia"
+            android:layout_width="380dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/round"
+            android:enabled="false"
+            android:gravity="center" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose your file"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"/>
+
+        <ImageButton
+            android:id="@+id/image"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/baseline_image_24"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"/>
+
+        <ImageButton
+            android:id="@+id/video"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/baseline_videocam_24"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="45dp"/>
+
+        <ImageButton
+            android:id="@+id/mic"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/baseline_mic_24"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="50dp"/>
+
+    </RelativeLayout>
+
+    <!-- level of urgency -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:text="Select the level of Urgency"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+        <AutoCompleteTextView
+            android:id="@+id/urgency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="SUBMIT"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:background="@drawable/button_round" />
+
+</LinearLayout>
